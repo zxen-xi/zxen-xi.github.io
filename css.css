@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=Fira+Code:wght@300&display=swap');
+
+:root {
+    --dark-col: #0d0d0d;
+    --darker-col: #000000;
+    --text-col: #ffffff;
+}
+
+body {
+    color: var(--text-col);
+    background: linear-gradient(to left, var(--dark-col), var(--darker-col));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    height: 100vh;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.center-div {
+    text-align: center;
+}
+
+.header {
+    font-family: 'Fira Code';
+}
+
+.about-me {
+    font-family: 'DM Sans';
+    font-size: 1.25em;
+}
+
+.pfp {
+    max-height: 200px;
+    border-radius: 50%;
+    outline: solid #1cb7a0;
+    outline-offset: 5px;
+}
