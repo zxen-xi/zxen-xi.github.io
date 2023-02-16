@@ -19,6 +19,28 @@ body {
     font-family: 'Fira Code', monospace;
 }
 
+.myn {
+    font-family: 'Fira Code';
+    color: #1cb7a0;
+}
+
+h2.myn > span {
+    animation: curblink 1s step-end infinite;
+    font-weight: 10px;
+}
+
+@keyframes curblink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .about-me {
     font-family: 'Fira Code';
     font-size: 1.25em;
