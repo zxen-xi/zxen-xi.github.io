@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=Fira+Code:wght@300&display=swap');
+@font-face {
+    font-family: 'Fira Code';
+    src: url('FiraCode-Regular.woff') format('woff');
+  }
 
 :root {
     --dark-col: #0d0d0d;
@@ -26,7 +29,7 @@ body {
 
 h2.myn > span {
     animation: curblink 1s step-end infinite;
-    font-weight: 10px;
+    margin: 5px;
 }
 
 @keyframes curblink {
