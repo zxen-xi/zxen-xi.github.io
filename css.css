@@ -4,14 +4,14 @@
   }
 
 :root {
-    --dark-col: #0d0d0d;
+    --dark-col: #313131;
     --darker-col: #000000;
     --text-col: #ffffff;
 }
 
 body {
     color: var(--text-col);
-    background-color: var(--dark-col);
+    background-color: var(--darker-col);
 }
 
 .center-div {
@@ -25,11 +25,12 @@ body {
 .myn {
     font-family: 'Fira Code';
     color: #1cb7a0;
+    display: inline-block;
 }
 
-h2.myn > span {
+.myn > span {
     animation: curblink 1s step-end infinite;
-    margin: 5px;
+    font-size: 20px;
 }
 
 @keyframes curblink {
