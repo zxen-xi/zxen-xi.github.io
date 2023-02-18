@@ -12,6 +12,31 @@
 body {
     color: var(--text-col);
     background-color: var(--darker-col);
+    font-family: 'Fira Code';
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar > li {
+    display: inline;
+    font-size: 20px;
+}
+
+.navbar li a {
+    color: var(--text-col);
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.navbar li a:hover {
+    transform: translate(2px, -2px);
+    text-shadow: -2px 2px #1cb7a0;
 }
 
 .center-div {
@@ -48,8 +73,8 @@ body {
 .about-me {
     font-family: 'Fira Code';
     font-size: 1.25em;
-    margin-left: 15vw;
-    margin-right: 15vw;    
+    margin-left: 30vw;
+    margin-right: 30vw;    
 }
 
 .pfp {
@@ -57,4 +82,11 @@ body {
     border-radius: 50%;
     outline: solid #1cb7a0;
     outline-offset: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-me {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
 }
